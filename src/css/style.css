@@ -1,0 +1,142 @@
+body {
+  display: flex;
+  justify-self: center;
+}
+
+.container {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-btn {
+  font-size: 18px;
+  background-color: white;
+  padding: 10px 20px;
+  margin-left: auto;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.add-btn:hover,
+.popover-btn-cancel:hover,
+.popover-btn-ok:hover,
+.popover-btn-edit:hover,
+.popover-btn-delete:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.tasks {
+  list-style: none;
+}
+
+.tasks-task {
+  cursor: pointer;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  margin-top: -1px;
+}
+
+.done-btn,
+.edit-btn,
+.remove-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.remove-btn {
+  margin-left: 0;
+}
+
+.main-task,
+.second-task {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-date {
+  margin-left: 50px;
+}
+
+.task-text {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.main-task {
+  display: flex;
+}
+
+.description {
+  width: 50%;
+  margin-right: 200px;
+}
+
+.none {
+  display: none;
+}
+
+.popover {
+  cursor: auto;
+  padding: 10px;
+  top: 30px;
+  left: 44vw;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.name-popover {
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.popover-short-desc {
+  padding: 5px;
+  width: 96%;
+}
+
+.all-desc {
+  min-height: 70px;
+  width: 96%;
+  padding: 5px;
+  resize: none;
+}
+
+.popover-btn-cancel {
+  margin-left: 60%;
+  margin-right: 20px;
+}
+
+.popover-btn-cancel,
+.popover-btn-ok,
+.popover-btn-edit,
+.popover-btn-delete {
+  cursor: pointer;
+  padding: 13px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.popover-delete {
+  height: 150px;
+}
